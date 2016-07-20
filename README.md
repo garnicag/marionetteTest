@@ -1,15 +1,13 @@
-skeleton
+Marionette Test
 ========
 
-Skeleton for a Backbone, Marionette application using Require.js, Bower, Grunt and LESS
+A simple app made in Backbone and Marionette using Require.js, Bower, Grunt and SASS
 
 # Quick start
 
-Using this skeleton for your project is fairly simple:
-
 1. Clone this repository:
 
-   git clone git@github.com:mezod/skeleton.git
+   git clone git@github.com:garnicag/marionetteTest.git
 
 2. Install all dependencies defined in package.json
  
@@ -21,10 +19,6 @@ Using this skeleton for your project is fairly simple:
 
 You are good to go!
 
-# Blog post on how this skeleton was built
-
-[Skeleton for a Backbone, Marionette application using Require.js, Bower, Grunt and LESS](http://blog.joanboixados.com/skeleton-for-a-backbone-marionette-application-using-require-js-bower-grunt-and-less/) (15/10/2014)
-
 # Features
 - Bower
 - Node
@@ -35,11 +29,5 @@ You are good to go!
 - Backbone
 - Marionette
 - Bootstrap
-- LESS
+- SASS
 - Grunt
-
-# Apps using this skeleton
-
-My [multikanban](https://github.com/mezod/multikanban) app is based on this skeleton.
-
-
