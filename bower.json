@@ -7,6 +7,10 @@
     "underscore": "latest",
     "requirejs": "latest",
     "marionette": "latest",
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.2.0",
+    "jasmine": "~2.4.1",
+    "handlebars": "~4.0.5",
+    "text": "~2.0.15",
+    "almond": "~0.3.2"
   }
 }

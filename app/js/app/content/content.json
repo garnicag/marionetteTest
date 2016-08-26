@@ -1,0 +1,33 @@
+{
+    "textConstants": {
+        "checkWeaterIn": "Check the weather in",
+        "searchPlaceholder": "this city",
+        "tempSymbol": "ºC",
+        "countrySeparator": ","
+    },
+
+    "defaultCity": "Moscow",
+
+    "favoriteCities": [
+        {
+            "city": "bogota",
+            "cityLabel": "Bogotá"
+        },
+        {
+            "city": "london",
+            "cityLabel": "London"
+        },
+        {
+            "city": "new york",
+            "cityLabel": "New York"
+        },
+        {
+            "city": "amsterdam",
+            "cityLabel": "Amsterdam"
+        },
+        {
+            "city": "tokyo",
+            "cityLabel": "Tokyo"
+        }
+    ]
+}

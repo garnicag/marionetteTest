@@ -3,18 +3,26 @@ module.exports = function(grunt) {
 
 	// requirejs compile options
 	var compileOptions = {
-		mainConfigFile: 'app/scripts/main.js',
-		baseUrl: 'app/scripts',
-		include: ['main'],
-		out: 'dist/main.min.js',
+		mainConfigFile: 'app/js/app/config/Init.js',
+		baseUrl: 'app/js',
+		name: 'vendor/almond/almond',
+		out: 'app/js/main.min.js',
 		removeCombined: false,
 		findNestedDependencies: true,
 
+		uglify2: {
+	   		output: {
+		   		beautify: true
+	   		},
+		},
+
 		//Removes console.logs for production
+		/*
 		onBuildWrite: function (moduleName, path, contents) {
 			if(/(.*)js\/modules\/(.*)/.test(path)) return contents.replace(/console.log(.*);/g, ';');
 			return contents;
 		}
+		*/
 	}
 
 	//Initializing the configuration object
@@ -22,10 +30,10 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					style: 'compact'
+					style: 'compressed'
 				},
 				files: {
-					"./app/styles/styles.css": "./app/styles/styles.scss"
+					"./app/css/styles.css": "./app/css/sass/styles.scss"
 				}
 			}
 		},
@@ -37,7 +45,7 @@ module.exports = function(grunt) {
 		connect: {
 			server: {
 				options: {
-					port: 8000,
+					port: 8002,
 					hostname: '*',
 					base: 'app',
 					livereload: true
@@ -46,17 +54,17 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			options: {
-				livereload: true  
+				livereload: true
 			},
 			sass: {
-				files: ['app/styles/*.scss'],
+				files: ['app/css/sass/*.scss'],
 				tasks: ['sass']
 			},
 			html: {
 				files: ['app/index.html','**/*.html']
 			},
 			requirejs: {
-				files: ['app/scripts/main.js'],
+				files: ['app/js/app/**/*.js'],
 				tasks: ['requirejs']
 			}
 		}

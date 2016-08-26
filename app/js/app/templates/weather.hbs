@@ -1,0 +1,13 @@
+{{#if weather.0.icon}}
+<div class="icon animated bounceIn">
+    <img src="img/icons/{{weather.0.icon}}.svg">
+</div>
+{{/if}}
+
+<div class="city animated fadeInUp">
+    <strong>{{name}}</strong>{{textConstants.countrySeparator}} {{sys.country}}
+</div>
+
+<div class="temp animated fadeInUp" id="temp">
+    {{main.temp}} {{textConstants.tempSymbol}}<br><br>
+</div>

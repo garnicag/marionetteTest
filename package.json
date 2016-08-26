@@ -1,7 +1,19 @@
 {
-  "name": "Marionette Test",
-  "version": "0.0.1",
-  "description": "Backbone, Marionette application using Require.js, Bower, Grunt and SASS",
+  "name": "bbWeather",
+  "title": "bbWeather",
+  "description": "A simple Weather app made in Marionette",
+  "version": "2.0.3",
+  "homepage": "https://github.com/garnicag/bbweather2",
+  "license": "GPL-3.0",
+  "author": {
+    "name": "Gabriel Garnica",
+    "email": "brian.garnica@prodigious.com",
+    "url": "https://github.com/garnicag/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:garnicag/bbweather2.git"
+  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
